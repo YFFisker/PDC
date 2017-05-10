@@ -1,0 +1,21 @@
+{
+  "name": "PDS",
+  "description": "",
+  "main": "",
+  "authors": [
+    "YFFisker"
+  ],
+  "directory": "app/components/",
+  "license": "GNU GENERAL PUBLIC LICENSE",
+  "homepage": "https://github.com/YFFisker/PDC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "app/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-bootstrap": "^2.5.0"
+  }
+}
