@@ -18,6 +18,8 @@ module.exports = function (app) {
         app.use(express.cookieParser('your secret here'));
         app.use(express.session());
 
+        app.use(express.static(path.join(__dirname, '/app')));
+
         app.use(function middlewarePlaceholder(req, res, next) {
           return next();
         });

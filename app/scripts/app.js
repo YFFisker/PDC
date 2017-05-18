@@ -2,7 +2,7 @@
 (function(){
 
 
-    var app = angular.module('testmeanApp', []);
+    var app = angular.module('PDCApp', []);
     app.config(function ($routeProvider) {
         $routeProvider
             .when('/', {
