@@ -24,7 +24,7 @@ module.exports = function (app) {
           return next();
         });
 
-        app.use(app.router);
+        app.use('/pdc',app.router);
         app.use(express.errorHandler());
     });
 };
