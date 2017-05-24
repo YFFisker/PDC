@@ -11,10 +11,10 @@ angular.module('PDCApp')
 
 
 
-    $('serviceGrid').bootstrapTable({
-        url : "",
-
-    })
+    // $('serviceGrid').bootstrapTable({
+    //     url : "",
+    //
+    // })
 
 
   });
