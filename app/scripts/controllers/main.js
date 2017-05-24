@@ -7,4 +7,14 @@ angular.module('PDCApp')
       'AngularJS',
       'Karma'
     ];
+
+
+
+
+    $('serviceGrid').bootstrapTable({
+        url : "",
+
+    })
+
+
   });

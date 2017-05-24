@@ -1,3 +1,6 @@
+
+<link rel="stylesheet" href="bower_components/bootstrap-table/dist/bootstrap-table.css">
+
 <div class="nav-container">
     <nav class="nav-1">
         <div class="container">
@@ -6,7 +9,7 @@
                                                                           class="logo"></a>
                     <ul class="menu">
                         <li><a href="#/main" class="active">首页</a></li>
-                        <li><a href="#/grid">接口列表</a></li>
+                        <li><a href="#/grid">现有接口</a></li>
                         <!--<li class="has-dropdown"><a href="#">增加接口</a>-->
                         <!--<ul class="subnav">-->
                         <!--<li><a href="/docs/getting-started-guide">webservice接口</a></li>-->
@@ -14,7 +17,7 @@
                         <!--<li><a href="/docs/api-reference">REST API</a></li>-->
                         <!--</ul>-->
                         <!--</li>-->
-                        <li><a href="#/add">增加接口</a></li>
+                        <li><a href="#/add">定制接口</a></li>
                     </ul>
                     <div class="text-right">
                         <ul class="social-links">
@@ -30,6 +33,70 @@
             <div class="bar-2"></div>
         </div>
     </nav>
-列表
 </div>
 
+<div class="main-container">
+    <section class="contained-projects">
+        <div class="container">
+            <div class="row">
+                <table data-toggle="table"
+                       id ="serviceGrid"
+                       data-url="https://api.github.com/users/wenzhixin/repos"
+                       data-query-params="queryParams"
+                       data-pagination="true"
+                       data-search="true"
+                       data-show-refresh="true"
+                       data-show-toggle="true"
+                       data-show-pagination-switch="true">
+                    <thead>
+                    <tr>
+                        <th data-field="name">名称</th>
+                        <th data-field="path">接口地址</th>
+                        <th data-field="type">类型</th>
+                        <th data-field="cDate">创建时间</th>
+                        <th data-field="description">描述</th>
+                        <th data-field="useCount">被调用次数</th>
+                        <th data-field="state">状态</th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+
+<footer class="footer-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <ul>
+                    <li><a href="#">关于</a></li>
+                    <li><a href="#" target="_blank">登录</a></li>
+                    <li><a href="#/contact">联系我们</a></li>
+                </ul>
+                <div class="footer-lower"><span>© Copyright 2017 YFFisker</span>
+                    <sapn>- Made with<i class="icon pe-7s-like"></i>in hangzhou, china.</sapn>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="bower_components/jquery/jquery.js"></script>
+<script src="bower_components/bootstrap-table/dist/bootstrap-table.js"></script>
+<script src="bower_components/bootstrap-table/dist/locale/bootstrap-table-zh-CN.js"></script>
+<script type="text/javascript">
+    function queryParams() {
+        return {
+            type: 'owner',
+            sort: 'updated',
+            direction: 'desc',
+            per_page: 100,
+            page: 1
+        };
+    }
+</script>
