@@ -9,8 +9,9 @@
         "node": ">=0.8.0"
     },
     "dependencies": {
+        "ejs": "*",
         "express": "3.4.0",
-        "ejs": "*"
+        "request": "^2.83.0"
     },
     "devDependencies": {
         "grunt": "~0.4.1",
